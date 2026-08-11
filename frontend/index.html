@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Loan Vault — Scoped Terms Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root">
+  <div class="topbar">
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <div class="seal-mark">LT</div>
+    <div>
+      <h1>The Loan Vault</h1>
+      <div class="sub">scoped terms assistant · FastAPI + Gemini · two security gates</div>
+    </div>
+    <div class="topbar-right">
+      <div class="gate-chip"><span class="gate-dot"></span>scope guard</div>
+      <div class="gate-chip"><span class="gate-dot"></span>grounding guard</div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="sidebar" id="sidebar"></div>
+    <div class="chat-col">
+      <div class="chat-scroll" id="chatScroll">
+        <div class="chat-inner" id="chatInner">
+          <div id="bannerHost"></div>
+        </div>
+      </div>
+      <div class="input-bar">
+        <div class="input-inner">
+          <textarea id="msgInput" rows="1" placeholder="Ask about this contract's rate, fees, penalties, eligibility…"></textarea>
+          <button class="send-btn" id="sendBtn" title="Send">➤</button>
+        </div>
+        <div class="disclaimer">Answers are generated from the document above and may still contain errors — always verify against the original PDF before relying on it.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
